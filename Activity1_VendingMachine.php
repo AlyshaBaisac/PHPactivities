@@ -73,7 +73,7 @@
                     $pieces = "pieces";
                 }
 
-                if ($size == ' Regular'){
+                if ($size == 'Regular'){
                     $addOns = 0;
                 }
                 elseif ($size == 'upsize') {
@@ -88,7 +88,7 @@
                 foreach ($pop as $popkey => $popvalue) {
                     echo 
                         "<ul><li>"
-                                .$quantity ." ".$pieces." of ".$size." ".$popkey." amounting to ₱ = ".$totalValue = intval($popvalue) * intval($quantity) + ($addOns *intval($quantity)).
+                                .$quantity ." ".$pieces." of ".$size." ".$popkey." amounting to ₱ ".$totalValue = intval($popvalue) * intval($quantity) + ($addOns *intval($quantity)).
                         "</li></ul>";
 
                 $totalPrice = (array_sum($pop) + $addOns *  $quantity) * $quantity;
