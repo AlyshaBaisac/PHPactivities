@@ -22,8 +22,7 @@
             <?php 
                 if (isset($arrsoda)) {
                     foreach ($arrsoda as $keysoda => $sodavalue) {
-                        // echo "<input type='checkbox' name='sodacheck'" .$keysoda. "}' value'" .$sodavalue. "'>
-                        // <label>" . $keysoda. " - ₱" .$sodavalue. "</label> <br>";
+
                         echo "<input type='checkbox' name='sodacheck[".$keysoda."]' value='".$sodavalue."' id = 'sodacheck[".$keysoda."]'><label for = 'sodacheck[".$keysoda."]'>".$keysoda." -&#8369; ".$sodavalue." </label><br>\n";
 
                     }
